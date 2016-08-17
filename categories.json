@@ -1,0 +1,19 @@
+{ "Categories" : [
+	{"name" : "Star Wars",
+	"URL" : "starwars.php" },
+	{"name" : "Pirates",
+	"URL" : "pirates.php" },
+	{"name" : "Ninjago",
+	"URL" : "ninjago.php" },
+	{"name" : "Harry Potter",
+	"URL" : "harrypotter.php" },
+	{"name" : "Marvel",
+	"URL" : "marvel.php" },
+	{"name" : "Lord of the Rings",
+	"URL" : "lordrings.php" },
+	{"name" : "DC",
+	"URL" : "dc.php" }
+
+	]
+
+}

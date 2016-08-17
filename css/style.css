@@ -1,0 +1,106 @@
+/*========== GENERAL STYLES ========== */
+
+body {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #fc8d3c;
+	font-family: 'Orbitron', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ========== NAVIGATION ========== */
+.navbar-default {
+    background-color: #fc8d3c;
+    border-color: #fc8d3c;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #555;
+}
+
+
+.dropdown-menu {
+	background-color: #fc8d3c;
+}
+
+/* ========== SECTIONS ========== */
+.section-white,
+.section-wrapper
+ {
+	min-height: 400px;
+	padding: 40px 20px;
+}
+
+.section-white, 
+.bk-white {
+	background-color: #fff;
+}
+
+.favorites {
+    background-color: #1a1a1a;
+}
+
+.favorites h3 {
+
+	font-size: 17px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #1a1a1a;
+	text-align:center;
+}
+
+
+.col-box {
+
+	background-color: #fff;
+	padding:15px;
+	margin: 20px 0px;
+	min-height: 375px;
+}
+
+.col-box img {
+    margin: 10px auto;
+}
+
+.bk-black {
+	background-color: #1a1a1a;
+}
+
+.bk-lt-gray {
+	background-color: #afa9ab;
+}
+
+.bk-lt-gray h2 {
+	color:#fff;
+}
+
+.list-group-item.active, 
+.list-group-item.active:hover, 
+.list-group-item.active:focus {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+.pic-layout-center {
+	margin: 15px auto;
+}
+/* ========== FOOTER ========== */
+footer {
+	background-color: #fc8d3c;
+	color: #fff;
+	padding:20px;
+	text-align: center;
+}
