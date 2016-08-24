@@ -3,6 +3,7 @@
 function initPage(categoryData, favoritesData) {
     loadCategoryData(categoryData);
     loadFavoritesData(favoritesData);
+    addCollectionsMenu(categoryData);
 }
 
 function loadCategoryData(categoryData) {
@@ -47,6 +48,22 @@ function loadFavoritesData(favoritesData) {
 	});
 	console.log(output);
 	$('.favorites').html(output);
+}
+
+function addCollectionsMenu(categoryData) {
+    var output = '<ul class="dropdown-menu">';
+
+	/*outer each handles the Categories object*/
+	$.each(categoryData, function() {
+		
+		$.each(this, function (index, value) {
+			/*console.log(value.URL + ":" + value.name);*/
+			output += '<li><a href="' + value.URL + '">' + value.name + '</a></li>';
+		});
+		output += '</li>';
+	});
+	output += '</ul>';
+    $('.collection-menu').append(output);
 }
 /*
 $.getJSON('../favorites.json', function(data) {

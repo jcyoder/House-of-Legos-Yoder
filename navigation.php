@@ -1,3 +1,4 @@
+<?php require "Categories.php" ?>
 <nav class="navbar navbar-default">
   		<div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,13 +16,14 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li><a href="index.php">Home</a></li>
-	        <li><a href="/">Collections</a></li>
+	        <li class="dropdown collection-menu">
+	        	 <a href="/"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Collections <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="/">Create New Category</a></li>
 	            <li><a href="/">Add to Collection</a></li>
-	            <li><a href="/">Remove from Collection</a></li>
+	            <li><a href="/">Remove from Collection</a></li> 
 	            <li><a href="/">Edit Collection</a></li>
 	          </ul>
 	        </li>
