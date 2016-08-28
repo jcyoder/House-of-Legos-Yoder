@@ -1,9 +1,8 @@
 /* JavaScript */
 
-function initPage(categoryData, favoritesData) {
-    loadCategoryData(categoryData);
+function initPage(favoritesData) {
     loadFavoritesData(favoritesData);
-    addCollectionsMenu(categoryData);
+   // addCollectionsMenu(categoryData);
 }
 
 function loadCategoryData(categoryData) {

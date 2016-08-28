@@ -1,4 +1,19 @@
-<?php require "Categories.php" ?>
+
+<?php
+	
+	require_once 'login.php';
+    require_once 'Categories.php';
+?>
+
+<?php 
+    $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
+	    if($connection->connect_error) {
+		    die('connect error:' . $connection->connect_error);
+	    } else {
+            //printf("yay! I'm connected");
+	    }  
+?>
+ 
 <nav class="navbar navbar-default">
   		<div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -18,6 +33,12 @@
 	        <li><a href="index.php">Home</a></li>
 	        <li class="dropdown collection-menu">
 	        	 <a href="/"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
+                
+               <?php 
+                    createCategoryMenu($connection); 
+               
+                ?> 
+            </li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Collections <span class="caret"></span></a>
 	          <ul class="dropdown-menu">

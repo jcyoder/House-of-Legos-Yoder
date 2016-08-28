@@ -1,8 +1,20 @@
-<?php
+ <?php
 	require_once 'header.php';
-	require_once 'login.php';
+	/*require_once 'login.php';
+    require_once 'Categories.php';
+    */
 ?>
 
+<?php 
+  /*  $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
+	    if($connection->connect_error) {
+		    die('connect error:' . $connection->connect_error);
+	    } else {
+            printf("yay! I'm connected");
+	       
+	    }  
+  */
+?>
 
 <body>
 	<img src="images/homepage-picture.jpg" alt="House of Legos" />
@@ -17,6 +29,9 @@
 			  	<br><br>
 			  	<h2>Collections</h2>
 				<div class="list-group" id="category-items">
+                   <?php
+                       createCategorySideBar($connection);
+                   ?> 
 				</div>
 	  		</div>
 		  	<div class="col-md-9">
@@ -46,13 +61,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/newscript.js"></script>
     <script type="text/javascript">
-        var jsonCategoryData = <?php require 'categories.json';?>;
         var jsonFavoritesData = <?php require 'favorites.json';?>;
-        initPage( jsonCategoryData, jsonFavoritesData);
+        console.log(jsonFavoritesData);
+        initPage(jsonFavoritesData);
     </script> 
     
     <script src="js/jquery-3.1.0.min.js"></script>
-    
 
   </body>
 </html>
