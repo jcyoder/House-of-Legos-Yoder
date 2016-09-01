@@ -1,17 +1,8 @@
 
 <?php
 	
-	require_once 'login.php';
+	//require_once 'login.php';
     require_once 'Categories.php';
-?>
-
-<?php 
-    $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
-	    if($connection->connect_error) {
-		    die('connect error:' . $connection->connect_error);
-	    } else {
-            //printf("yay! I'm connected");
-	    }  
 ?>
  
 <nav class="navbar navbar-default">
@@ -36,7 +27,7 @@
                 
                <?php 
                     createCategoryMenu($connection); 
-               
+                    
                 ?> 
             </li>
 	        <li class="dropdown">

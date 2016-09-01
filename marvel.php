@@ -1,5 +1,6 @@
 <?php
 	require_once 'header.php';
+    require_once 'login.php';
 ?>
   <body>
 	<img src="images/homepage-picture.jpg" alt="House of Legos" />
